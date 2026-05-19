@@ -13,7 +13,7 @@ const userSchema = new Schema(
       required: [true, "Email is required"],
       unique: [true, "Email already existed"],
     },
-    DOB: {
+    dateOfBirth: {
       type: Date,
       required: [true, "Date of birth is required"],
     },
