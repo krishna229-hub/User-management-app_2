@@ -20,6 +20,10 @@ allowedHeaders: ["Content-Type", "Authorization"]
 app.use(exp.json());
 
 // Routes
+app.get("/", (req, res) => {
+  res.send("Backend API is running. Access /user-api/users for the user data.");
+});
+
 app.use("/user-api", UserApp);
 
 // Database Connection
