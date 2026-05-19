@@ -8,7 +8,7 @@ function UsersList() {
   useEffect(() => {
     async function getUsers() {
       try {
-        let res = await fetch("https://user-management-app-1-kc19.onrender.com/user-api/users", {
+        let res = await fetch("https://user-management-app-2-kjok.onrender.com/user-api/users", {
           method: "GET",
         });
 
